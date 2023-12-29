@@ -208,7 +208,7 @@ class EcommerceFivePage extends StatelessWidget {
                   style: TextStyle(color: Colors.deepOrange),
                 )),
             BottomNavigationBarItem(
-                icon: Icon(Icons.settings), title: Text("Settings")),
+                icon: Icon(Icons.settings), title: Text("Settings") ),
           ],
         ),
         backgroundColor: Colors.white70.withOpacity(0.9),
@@ -216,32 +216,32 @@ class EcommerceFivePage extends StatelessWidget {
           child: Stack(
             children: <Widget>[
               Container(
-                height: 300,
+                height: 500,
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.only(
-                      bottomLeft: Radius.circular(30),
-                      bottomRight: Radius.circular(30)),
+                      bottomLeft: Radius.circular(70),
+                      bottomRight: Radius.circular(70)),
                   color: Colors.orangeAccent.shade700,
                 ),
                 width: double.infinity,
               ),
               Container(
-                margin: EdgeInsets.only(left: 90, bottom: 20),
+                margin: EdgeInsets.only(left: 900, bottom: 100),
                 width: 299,
                 height: 279,
                 decoration: BoxDecoration(
                     color: Colors.orangeAccent.shade400,
                     borderRadius: BorderRadius.only(
-                        topLeft: Radius.circular(160),
-                        bottomLeft: Radius.circular(290),
-                        bottomRight: Radius.circular(160),
-                        topRight: Radius.circular(10))),
+                        topLeft: Radius.circular(10),
+                        bottomLeft: Radius.circular(20),
+                        bottomRight: Radius.circular(10),
+                        topRight: Radius.circular(160))),
               ),
               CustomScrollView(
                 slivers: <Widget>[
                   SliverToBoxAdapter(
                     child: Padding(
-                      padding: const EdgeInsets.all(26.0),
+                      padding: const EdgeInsets.all(2.0),
                       child: Column(
                         mainAxisSize: MainAxisSize.min,
                         crossAxisAlignment: CrossAxisAlignment.start,
